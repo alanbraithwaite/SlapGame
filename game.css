@@ -1,6 +1,8 @@
 .image-bg{ 
+  
   background-size: cover;
-  background-color: blueviolet;
+  background-image: url(/Dungeon_Background_24.png);
+  background-color: rgb(156, 131, 179);
   background-position: center
 
 
@@ -9,6 +11,6 @@
 
 
 
-h1 {
+h2 {
 color: white;
 }

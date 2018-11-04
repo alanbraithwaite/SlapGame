@@ -14,38 +14,51 @@
 </head>
 
 <body>
+
   <div class="container image-bg">
     <div class="row">
       <div class="col d-flex justify-contant-center">
-        <header>
-          <h1>Let's Play SLAP THAT BELLY!!!</h1>
-        </header>
+
+        <h2>Let's Play SLAP THAT BELLY!!!</h2>
+
       </div>
-      <div class="row">
-        <div class="col">
-
-        </div>
-      </div>
-
-
-
-
-      <footer>
-
-        <button onclick=''>SLAP</button>
-        <button onclick=() type="button" class="btn btn-danger">SLAP</button>
-        <button onclick=() type="button" class="btn btn-danger">SLAP</button>
-        <button onclick=() type="button" class="btn btn-danger">SLAP</button>
-
-        <div class="col d-flex justify-contant-center">
-          <span>Health:<span id="health">--</span></span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-          </div>
-        </div>
-      </footer>
     </div>
+    <div class="row">
+      <div class="col-6">
+      </div>
+      <div class="col-6x`x`">
+        <img style="width:200px; height: 200px; " src="/Fat_Spiderman.gif" alt="">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+
+      </div>
+      <div class="col-6">
+
+        <span>Health:<span id="health">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="row d-flex justify">
+    <div class="col-6">
+
+    </div>
+    <div class="col-6">
+      <button onclick="slap(1)" type="button" class="btn btn-primary">SLAP</button>
+      <button onclick="punch(5)" type="button" class="btn btn-warning">PUNCH</button>
+      <button onclick="kick(10)" type="button" class="btn btn-danger">KICK</button>
+    </div>
+  </div>
+
 
   </div>
 
@@ -53,7 +66,12 @@
 
 
 
+
+
   <script src="/game.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
