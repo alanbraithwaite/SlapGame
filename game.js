@@ -1,11 +1,16 @@
-let health = 100
-
+let health = 100;
 
 function slap() {
   document.getElementById('health'); --health
-  return health
 }
 
+function punch() {
+  document.getElementById('health'); --health
+}
+
+function kick() {
+  document.getElementById('health'); --health
+}
 // function punch(); { }
 // On the slap button element, add the attribute onClick = "slap()"
 // If things are working properly you should be able to hit the slap button and see the alert window with a decrease in health.
