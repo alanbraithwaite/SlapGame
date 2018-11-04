@@ -2,13 +2,20 @@
   
   background-size: cover;
   background-image: url(/Dungeon_Background_24.png);
-  background-color: rgb(156, 131, 179);
+  /* background-color: rgb(156, 131, 179); */
   background-position: center
 
 
 }
 
+.health {
+  color: white
+}
 
+/* .button{
+	height:20px;
+	width:50px;
+	} */
 
 
 h2 {
