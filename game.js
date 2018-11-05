@@ -1,3 +1,5 @@
+
+// Character to shoot
 let spiderman = {
   name: "Spiderman",
   health: 100,
@@ -5,8 +7,7 @@ let spiderman = {
   items: []
 }
 
-
-
+// items that spiderman is can carry. Limit of 2, one for each hand
 let items = {
   // gum: {
   //   name: "gum",
@@ -30,6 +31,7 @@ let items = {
   }
 }
 
+// actions slap punch kick with multipier
 let actions = {
   slap: { multiplier: 1 },
   punch: { multiplier: 2 },
@@ -37,27 +39,16 @@ let actions = {
 }
 
 
-
-
+// function to getGuns Limit of 2, one for each hand
 function getGuns(item) {
   if (!(spiderman.items.indexOf(item) >= 0)) {    //only add if not already in the array
     if (spiderman.items.length > 2)    //if we are exceeding limit of 2, drop first weapon before adding
       spiderman.items.shift()
     spiderman.items.push(item)
   }
-
-  // if (gun == 1) {
-  //   spiderman.item = items.cal22
-  // }
-  // else if (gun == 2) {
-  //   spiderman.item = items.cal44mag
-  // }
-  // else {
-  //   spiderman.item = items.cal454cas
-  // }
-  // update()
 }
 
+// refresh and update page after
 function update() {
   document.getElementById("health").innerText = spiderman.health.toString()
   document.getElementById("hits").innerText = spiderman.hits.toString()
@@ -65,6 +56,7 @@ function update() {
 
 }
 
+// reset page after ko or when ever. 
 function reset() {
   spiderman.health = 100
   spiderman.hits = 0
@@ -74,6 +66,8 @@ function reset() {
   update()
 }
 
+
+// add and multiplies total damage 
 function totalDamage(action) {
   let totalmodifier = 0
 
@@ -87,6 +81,8 @@ function totalDamage(action) {
   return action.multiplier * totalmodifier
 }
 
+
+// Checks spidermans health and K0 if 0
 function act(action) {
   spiderman.health -= totalDamage(action)
 
@@ -100,23 +96,6 @@ function act(action) {
 
   update()
 }
-// function slap() {
 
-//   spiderman.health -= 1 * spiderman.items
-//   ++spiderman.hits
-//   update()
-// }
-
-// function punch() {
-//   spiderman.health -= 2 * spiderman.items
-//   ++spiderman.hits
-//   update()
-// }
-
-// function kick() {
-//   spiderman.health -= 3 * spiderman.items
-//   ++spiderman.hits
-//   update()
-// }
 
 
