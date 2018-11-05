@@ -25,51 +25,64 @@
       <div class="row">
         <div class="col d-flex justify-contant-center">
 
-          <h3>Let's Play SLAP THAT BELLY!!!</h3>
+          <h3>Let's Play SHOOT THAT BELLY!!!</h3>
 
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <span>
-            Health:
-            <span id="health">
-            </span>
-          </span>
-          <span>Hits:
-            <span id="hits">
-            </span>
-          </span>
+        <div class="col-12">
+          <div class="col-6">
+            <h5>
+              Health:
+              <span id="health">100
+              </span>
+
+              Hits:
+              <span id="hits">0
+              </span></h5>
+          </div>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-8">
+          <div class="progress">
+            <div id="progress" class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="row">
-      <div class="col-7">
-        <button onclick="getGuns(1)" type="button" class="btn btn-info btn-sm">22CAL</button>
-        <button onclick="getGuns(2)" type="button" class="btn btn-warning btn-sm">357CAL</button>
-        <button onclick="getGuns(3)" type="button" class="btn btn-danger btn-sm">454CAS</button>
+      <div class="col-4">
+        <button onclick="getGuns(items.cal22)" type="button" class="btn btn-success btn-sm">22CAL</button>
+        <button onclick="getGuns(items.cal44mag)" type="button" class="btn btn-warning btn-sm">44CAL</button>
+        <button onclick="getGuns(items.cal454cas)" type="button" class="btn btn-danger btn-sm">454CAS</button>
+
       </div>
       <div class="col-5 d-flex ">
-        <img style="width:200px; height: 300px; " src="/Fat_Spiderman.gif" alt="">
+        <div>
+          <h3 id="ko"></h3>
+        </div>
+        <img style="width:100px; height: 250px; " src="/Fat_Spiderman.gif" alt="">
 
       </div>
     </div>
-    <div class="row">
-      <!-- <div class="col-6"> -->
-
-      <!-- </div> -->
-      <div class="col-6-auto">
-
-      </div>
-    </div>
-
-
     <div class="row d-flex">
-      <div class="col-12">
-        <button onclick="slap()" type="button" class="btn btn-info btn-sm">SLAP</button>
-        <button onclick="punch()" type="button" class="btn btn-warning btn-sm">PUNCH</button>
-        <button onclick="kick()" type="button" class="btn btn-danger btn-sm">KICK</button>
+      <div class="col-auto">
+        <!-- <div class="progress">
+          <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div> -->
+      </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-6">
+        <button onclick="act(actions.slap)" type="button" class="btn btn-info btn-sm">SLAP</button>
+        <button onclick="act(actions.punch)" type="button" class="btn btn-warning btn-sm">PUNCH</button>
+        <button onclick="act(actions.kick)" type="button" class="btn btn-danger btn-sm">KICK</button>
+      </div>
+      <div class="col-6 pull-right">
+        <button onclick="reset()" id="reset" type="button" class="btn btn-success btn-sm pull-right">Reset</button>
       </div>
     </div>
   </div>
