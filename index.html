@@ -21,15 +21,34 @@
 <body>
 
   <div class="container image-bg">
-    <div class="row">
-      <div class="col d-flex justify-contant-center">
+    <header>
+      <div class="row">
+        <div class="col d-flex justify-contant-center">
 
-        <h2>Let's Play SLAP THAT BELLY!!!</h2>
+          <h3>Let's Play SLAP THAT BELLY!!!</h3>
 
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col">
+          <span>
+            Health:
+            <span id="health">
+            </span>
+          </span>
+          <span>Hits:
+            <span id="hits">
+            </span>
+          </span>
+        </div>
+      </div>
+
+    </header>
     <div class="row">
       <div class="col-7">
+        <button onclick="getGuns(1)" type="button" class="btn btn-info btn-sm">22CAL</button>
+        <button onclick="getGuns(2)" type="button" class="btn btn-warning btn-sm">357CAL</button>
+        <button onclick="getGuns(3)" type="button" class="btn btn-danger btn-sm">454CAS</button>
       </div>
       <div class="col-5 d-flex ">
         <img style="width:200px; height: 300px; " src="/Fat_Spiderman.gif" alt="">
@@ -41,7 +60,7 @@
 
       <!-- </div> -->
       <div class="col-6-auto">
-        <span>Health: <span id="health">--</span></span>
+
       </div>
     </div>
 
